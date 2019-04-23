@@ -1,0 +1,25 @@
+extends ../template
+
+block variables
+    - var title = 'Блог'    
+
+block content
+    .main-container.blog-page
+        .breadcrumbs
+            a.breadcrumbs-item(href="") Главная
+            img(src="assets/images/breadcrumbs-arrow.svg", alt="")
+            a.breadcrumbs-item(href="") Об агентстве
+        .page-title
+            span Блог
+        .tag-search
+            .tag-search-title
+                span Поиск по тэгу:
+            .tag-search-link.active
+                a(href="")
+                    span Новость
+            .tag-search-link
+                a(href="")
+                    span Знания
+            .tag-search-link
+                a(href="")
+                    span Факты

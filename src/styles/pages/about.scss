@@ -2,6 +2,109 @@
     .breadcrumbs {
         position: absolute;
     }
+    .contact-us-form {
+        width: 100%;
+        padding-left: 138px; 
+        margin-bottom: 100px;       
+        .contact-us-form-title {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .contact-us-form-content {
+            display: flex;            
+            .contact-us-form-content-map {                
+            }
+            .contact-us-form-content-form {
+                border-top: 1px solid #D9D9D9;
+                border-bottom: 1px solid #D9D9D9;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 40px;
+                padding-right: 118px;                
+                width: 570px;
+                height: 488px;
+                .contact-us-form-content-form-title {
+                    font-weight: 600;
+                    margin-bottom: 40px;
+                }
+                .privacy-agreement {
+                    color: #111;
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin-bottom: 30px;
+                }
+                .btn {
+                    a {
+                        width: 132px;
+                        display: inline-block;
+                        text-align: center;
+                    }
+                }
+                form {
+                    .contact-us-form-content-form-row.two-input {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .contact-us-form-content-form-input-group {
+                            width: 48.4%;
+                        }
+                    }
+                    .contact-us-form-content-form-row {
+                        width: 100%;
+                        margin-bottom: 20px;
+                        .contact-us-form-content-form-input-group.message {
+                            textarea {
+                                height: 120px;
+                                width: 100%;                                
+                                border: 1px solid #C6C6C6;
+                                box-sizing: border-box;
+                                border-radius: 4px;
+                                font-size: 14px;
+                                padding-left: 10px;
+                                padding-top: 25px;
+                                outline: none;  
+                                resize: none; 
+                            }
+                        }
+                        .contact-us-form-content-form-input-group {
+                            position: relative;
+                            input {
+                                width: 100%;
+                                height: 62px;
+                                border: 1px solid #C6C6C6;
+                                box-sizing: border-box;
+                                border-radius: 4px;
+                                font-size: 14px;
+                                padding-left: 10px;
+                                outline: none;   
+                            }
+                            input:focus ~ .placeholder,
+                            input:valid ~ .placeholder,
+                            textarea:focus ~ .placeholder,
+                            textarea:valid ~ .placeholder {
+                                top: 8px;
+                                bottom: 10px;
+                                left: 10px;
+                                font-size: 10px;
+                                opacity: 1;
+                            }
+                            span {
+                                position: absolute;
+                                font-size: 14px;
+                                pointer-events: none;
+                                left: 10px;
+                                top: calc(50% - 8px);
+                                transition: 0.2s ease all;
+                            }
+                        }                        
+                    }
+                }
+            }
+        }
+    }
     .page-title {
         margin-top: 40px;
         margin-bottom: 30px;
