@@ -9,5 +9,12 @@ $(document).ready(function () {
         $('.insurance-form-progress-bar-green').css('width', '208px'); 
         else if(form_btn_counter === 2)
         $('.insurance-form-progress-bar-green').css('width', '100%').css('border-radius', '50px');
+      });  
+
+      $(".news-block-item.wide.video").on("mouseover", function(){
+        $(this).find('.news-block-item-background > video').get(0).play();                        
       });
+      $(".news-block-item.wide.video").on("mouseleave", function(){
+        $(this).find('.news-block-item-background > video').get(0).pause();        
+      });     
 });

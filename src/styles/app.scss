@@ -1,11 +1,13 @@
 @import "vendor/normalize.scss";
 @import "vendor/animate.scss";
 @import "vendor/hamburgers.min.scss";
+@import "vendor/jquery.fancybox.scss";
 @import "common/header.scss";
 @import "pages/index.scss";
 @import "pages/insurance-type.scss";
 @import "pages/about.scss";
 @import "pages/blog.scss";
+@import "pages/article.scss";
 @import "common/footer.scss";
 
 @font-face {
