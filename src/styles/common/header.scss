@@ -36,12 +36,13 @@
     .header-buttons {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         .header-buttons__phone {
           font-family: Roboto;
           font-weight: bold;
           font-size: 14px;  
           margin-right: 35px;
+          align-self: center;
           cursor: pointer;
         }        
         .header-buttons__order {

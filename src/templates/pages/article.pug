@@ -1,7 +1,7 @@
 extends ../template
 
 block variables
-    - var title = 'Блог'    
+    - var title = 'Статья'    
 
 block content
     .main-container.article-page
@@ -22,4 +22,199 @@ block content
         .article-page-content
             .article-page-content-row
                 .article-page-content-row-left
+                    .article-page-content-row-header
+                        span Заголовок перед новостью
+                    .article-page-content-row-text
+                        span Проснувшись однажды утром после беспокойного сна,
+                        | Грегор Замза обнаружил, что он у себя в постели превратился
+                        | в страшное насекомое. Лежа на панцирнотвердой спине, он видел,
+                        | стоило ему приподнять голову, свой коричневый, выпуклый,
+                        | разделенный дугообразными чешуйками живот, на верхушке
+                        | которого еле держалось готовое вот-вот окончательно сползти одеяло.                    
                 .article-page-content-row-right
+                    .article-page-content-row-author
+                        .article-page-content-row-author-img
+                            img(src="assets/images/author.png", alt="")
+                        .article-page-content-row-author-info
+                            .article-page-content-row-author-info-name
+                                span Иван Иванов
+                            .article-page-content-row-author-info-appointment
+                                span Страховой агент
+            .article-page-content-row.additional
+                .article-page-content-row-left
+                    .article-page-content-row-header
+                        span Заголовок врезки
+                    .article-page-content-row-text
+                        span Его многочисленные, убого тонкие по сравнению
+                        | с остальным телом ножки беспомощно копошились у него
+                        | перед глазами. «Что со мной случилось?» – подумал он.
+                        | Это не было сном. Его комната, настоящая, разве что слишком
+                        | маленькая, но обычная комната, мирно покоилась в своих четырех
+                        | хорошо знакомых стенах. Над столом, где были разложены
+                        | распакованные образцы сукон – Замза был коммивояжером,
+                        | – висел портрет, который он недавно вырезал из иллюстрированного
+                        | журнала и вставил в красивую золоченую рамку.                   
+                .article-page-content-row-right
+                    .article-page-content-row-link
+                        a(href="")
+                            span Ссылка на источник или вспомогательную ифнормацию
+            .article-page-content-row
+                .article-page-content-row-left
+                    .article-page-content-row-header
+                        span Заголовок следующей части
+                    .article-page-content-row-text
+                        span Его многочисленные, убого тонкие по сравнению
+                        | с остальным телом ножки беспомощно копошились у него
+                        | перед глазами. «Что со мной случилось?» – подумал он.
+                        | Это не было сном. Его комната, настоящая, разве что слишком
+                        | маленькая, но обычная комната, мирно покоилась в своих четырех
+                        | хорошо знакомых стенах. Над столом, где были разложены
+                        | распакованные образцы сукон – Замза был коммивояжером,
+                        | – висел портрет, который он недавно вырезал из иллюстрированного
+                        | журнала и вставил в красивую золоченую рамку.                   
+                .article-page-content-row-right    
+            .article-page-content-row.infographics
+                .article-page-content-row-left
+                    .article-page-content-row-table
+                        .article-page-content-row-table-header
+                            span Вставка инфографики
+                        table
+                            tr
+                                th Было
+                                th Стало
+                            tr
+                                td 500
+                                td 1000
+                            tr
+                                td 1200
+                                td 2200
+                            tr
+                                td 500
+                                td 1000
+                            tr
+                                td 1200
+                                td 2200
+                            tr
+                                td 500
+                                td 1000
+                            tr
+                                td 1200
+                                td 2200
+                .article-page-content-row-right
+            .article-page-content-row
+                .article-page-content-row-left
+                    .article-page-content-row-header
+                        span Заголовок следующей части
+                    .article-page-content-row-text
+                        span Его многочисленные, убого тонкие по сравнению
+                        | с остальным телом ножки беспомощно копошились у него
+                        | перед глазами. «Что со мной случилось?» – подумал он.
+                        | Это не было сном. Его комната, настоящая, разве что слишком
+                        | маленькая, но обычная комната, мирно покоилась в своих четырех
+                        | хорошо знакомых стенах. Над столом, где были разложены
+                        | распакованные образцы сукон – Замза был коммивояжером,
+                        | – висел портрет, который он недавно вырезал из иллюстрированного
+                        | журнала и вставил в красивую золоченую рамку.                   
+                .article-page-content-row-right
+                    .article-page-content-row-link
+                        a(href="")
+                            span Ссылка на источник или вспомогательную ифнормацию
+            .article-page-content-row
+                .article-page-content-row-left
+                    .article-page-content-row-social-btn
+                        .article-page-content-row-social-btn-item
+                            a(href="")
+                                span Поделиться в 
+                                span.bold &nbsp;ВК
+                        .article-page-content-row-social-btn-item
+                            a(href="")
+                                span Поделиться в 
+                                span.bold &nbsp;ФБ                                       
+                .article-page-content-row-right
+            .article-page-content-row.next
+                .article-page-content-row-left
+                    .article-page-content-row-header
+                        span Читать далее
+                .article-page-content-row-right
+    .main-container.blog-page
+        .news-block            
+            .news-block-item
+                .news-block-item-background
+                    img(src="assets/images/new1-background.jpg", alt="")
+                .tag-search
+                    .tag-search-link
+                        a(href="")
+                            span Новость
+                .news-block-item-date
+                    img(src="assets/images/date-icon.svg", alt="")                    
+                    span 15.05.2019
+                .news-block-item-content
+                    .news-block-item-title
+                        span Как грамотно выбрать тип страховки
+                    .news-block-item-text
+                        span Анонс новости размер в одно-два предложения для краткого описания выводимой новости размером в три строки
+                    .news-block-item-time
+                        img(src="assets/images/time-icon.svg", alt="")
+                        img.black(src="assets/images/time-icon-black.svg", alt="")
+                        span Время чтения 5 минут
+            .news-block-item
+                .news-block-item-background
+                    img(src="assets/images/new2-background.jpg", alt="")
+                .tag-search
+                    .tag-search-link
+                        a(href="")
+                            span Новость
+                .news-block-item-date
+                    img(src="assets/images/date-icon.svg", alt="")                    
+                    span 15.05.2019
+                .news-block-item-content
+                    .news-block-item-title
+                        span Как грамотно выбрать тип страховки
+                    .news-block-item-text
+                        span Анонс новости размер в одно-два предложения для краткого описания выводимой новости размером в три строки
+                    .news-block-item-time
+                        img(src="assets/images/time-icon.svg", alt="")
+                        img.black(src="assets/images/time-icon-black.svg", alt="")
+                        span Время чтения 5 минут
+            .news-block-item
+                .news-block-item-background
+                    img(src="assets/images/new1-background.jpg", alt="")
+                .tag-search
+                    .tag-search-link
+                        a(href="")
+                            span Новость
+                .news-block-item-date
+                    img(src="assets/images/date-icon.svg", alt="")                    
+                    span 15.05.2019
+                .news-block-item-content
+                    .news-block-item-title
+                        span Как грамотно выбрать тип страховки
+                    .news-block-item-text
+                        span Анонс новости размер в одно-два предложения для краткого описания выводимой новости размером в три строки
+                    .news-block-item-time
+                        img(src="assets/images/time-icon.svg", alt="")
+                        img.black(src="assets/images/time-icon-black.svg", alt="")
+                        span Время чтения 5 минут
+            .news-block-item
+                .news-block-item-background
+                    img(src="assets/images/new2-background.jpg", alt="")
+                .tag-search
+                    .tag-search-link
+                        a(href="")
+                            span Новость
+                .news-block-item-date
+                    img(src="assets/images/date-icon.svg", alt="")                    
+                    span 15.05.2019
+                .news-block-item-content
+                    .news-block-item-title
+                        span Как грамотно выбрать тип страховки
+                    .news-block-item-text
+                        span Анонс новости размер в одно-два предложения для краткого описания выводимой новости размером в три строки
+                    .news-block-item-time
+                        img(src="assets/images/time-icon.svg", alt="")
+                        img.black(src="assets/images/time-icon-black.svg", alt="")
+                        span Время чтения 5 минут 
+            
+
+                    
+                            
