@@ -28,7 +28,7 @@
                 margin-bottom: 30px;
             }
             .footer-content-item-btn {
-                margin-bottom: 30px;
+                margin-bottom: 30px;                
             }
             .footer-content-item-header {
                 font-weight: bold;
@@ -50,7 +50,10 @@
             }
             .footer-content-item-content {
                 display: flex;
-                flex-direction: column;                
+                flex-direction: column;
+                .header-buttons__social {
+                    margin-left: 0;
+                }               
                 a {
                     text-decoration: none;
                     color: #555555;
@@ -90,6 +93,56 @@
             .underline {
                 text-decoration-line: underline;
                 cursor: pointer;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1264px) {
+    .footer {
+        .footer-metainfo {
+            display: flex;
+            .footer-metainfo-item {
+                margin-right: 20px;
+                &:last-child {
+                    margin-left: auto;
+                }
+            }
+        }
+        .footer-content {
+            grid-template-columns: 220px 1fr 1fr;
+            grid-row-gap: 30px;
+            .footer-content-item {
+                &:nth-child(4) {
+                    grid-column-start: 3;
+                    margin-top: -80px;
+                }
+                &:nth-child(5) {
+                    grid-column-start: 2;
+                    grid-row-start: 2;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .footer {
+        .footer-content {
+            .footer-content-item {
+                .footer-content-item-phone {
+                    font-size: 17px;
+                    margin-bottom: 20px;
+                }
+                .footer-content-item-btn {
+                    margin-bottom: 20px;
+                }
+                .footer-content-item-header {
+                    font-size: 14px;
+                }
+                .footer-content-item-content {
+                    .footer-content-item-content__link {
+                        font-size: 12px;
+                    }
+                }
             }
         }
     }

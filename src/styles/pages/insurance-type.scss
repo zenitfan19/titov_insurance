@@ -6,6 +6,7 @@
     padding-top: 50px;
     padding-left: 20px;
     margin-bottom: 100px;
+    box-sizing: border-box;
     .fullscreen-container-info {
         margin-left: 9.7%;
         margin-top: 4.1%;
@@ -189,5 +190,105 @@
                 text-align: center;
             }
         }
+    }
+}
+@media screen and (max-width: 1264px) {
+    .fullscreen-container {
+        padding-top: 20px;
+        padding-bottom: 50px;
+        height: 35vw;
+        .fullscreen-container-info {
+            margin-left: 0;
+            .fullscreen-container-info-text {
+                margin-top: 30px;
+            }
+            .fullscreen-container-info-link {
+                margin-top: auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .fullscreen-container {
+        margin-bottom: 50px;
+        .fullscreen-container-info {
+            .fullscreen-container-info-text {
+                font-size: 14px;
+            }
+        }
+    }
+    .insurance-form {
+        .btn {
+            margin-bottom: 50px;
+        }
+        .insurance-form-title {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        .insurance-form-progress {
+            .insurance-form-progress-title {
+                font-size: 14px;
+            }
+        }
+    }
+    .insurance-description {
+        width: 100%;
+        margin-bottom: 50px;
+        .insurance-description-content {
+            .insurance-description-content-img {
+                img {
+                    width: 46vw;
+                }
+            }
+            .insurance-description-content-info {
+                .insurance-description-content-info-paragraph {
+                    margin-bottom: 30px;
+                    .insurance-description-content-info-paragraph-title {
+                        font-size: 14px;
+                    }
+                    .insurance-description-content-info-paragraph-text {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }                    
+                }
+                .insurance-description-content-info-item {
+                    margin-bottom: 30px;
+                    font-size: 14px;
+                }
+            }
+        }
+        &:nth-child(2) {
+            .what-to-insure {
+                width: 573px;
+            }
+        }
+        &:nth-child(3) {
+            .what-to-insure {
+                width: 432px;
+            }
+        }
+        .what-to-insure {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    .our-advantages {
+        margin-bottom: 50px;
+        width: 90%;
+        .our-advantages-title {
+            margin-bottom: 40px;
+        }
+        .our-advantages-content {
+            .our-advantages-content-item {
+                .our-advantages-content-item-img {
+                    transform: scale(0.8);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    .fullscreen-container {
+        height: 40vw;
     }
 }

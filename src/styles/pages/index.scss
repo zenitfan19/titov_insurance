@@ -323,3 +323,173 @@
     }
 
 }
+@media screen and (max-width: 1264px) {
+    .main-container {
+        .prof-insure {
+            width: 100%;
+        }
+        .our-team {
+            width: 100%;
+            .our-team-content {
+                justify-content: center;
+                .our-team-content-item {
+                    .our-team-content-title {
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                    .our-team-content-img {
+                        img {
+                            width: 17vw;
+                            height: 17vw;
+                        }
+                    }
+                }
+            }
+        }
+        .director {
+            width: 100%;
+            .director-img {
+                img {
+                    width: 46vw;
+                }
+            }
+            .director-info {
+                .director-info-detail {
+                    .director-info-detail-item {
+                        width: 76px;
+                        .director-info-detail-item__img {
+                            transform: scale(0.7);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .main-container {
+        .prof-insure {
+            padding: 30px 20px;
+            margin-bottom: 40px;
+            .prof-insure-title {
+                font-size: 18px;
+            }
+            .prof-insure-content {
+                .prof-insure-block {
+                    width: 40%;
+                    .prof-insure-block-title {
+                        font-size: 18px;
+                        padding-bottom: 15px;
+                        margin-bottom: 30px;
+                    }
+                    .prof-insure-block-item {
+                        margin-bottom: 30px;
+                        .prof-insure-block-item__header {
+                            font-size: 14px;
+                        }
+                        .prof-insure-block-item__text {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .what-to-insure {
+            width: 478px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            .what-to-insure-main {
+                font-size: 18px;
+            }
+            .what-to-insure-control {
+                font-size: 14px;
+            }
+        }
+        .our-team {
+            margin-bottom: 40px;
+            .our-team-title {
+                margin-bottom: 30px;
+            }
+            .our-team-content {
+                justify-content: space-between;
+            }
+        }
+        .useful-articles {
+            margin-bottom: 40px;
+            .useful-articles-title {
+                margin-bottom: 20px;
+            }
+            .useful-articles-content {
+                .useful-articles-content-item {
+                    padding: 10px;
+                    .useful-articles-content-item__date {
+                        font-size: 10px;
+                    }
+                    .useful-articles-content-item__title {
+                        font-size: 14px;
+                    }
+                    .useful-articles-content-item__text {
+                        font-size: 12px;
+                        line-height: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .useful-articles-content-item__link {
+                        font-size: 12px;
+                        img {
+                            width: 85px;
+                        }
+                    }
+                }
+            }
+        }
+        .director {
+            margin-bottom: 40px;
+            .director-img {
+                margin-left: 20px;
+            }
+            .director-info {
+                .director-info-title {
+                    margin-top: 0;
+                    font-size: 24px;
+                }
+                .director-info-subtitle {
+                    font-size: 14px;
+                }
+                .director-info-text {
+                    font-size: 14px;
+                    margin-bottom: 30px;
+                    line-height: 24px;
+                }
+                .director-info-text-list {
+                    font-size: 12px;
+                    margin-bottom: 40px;
+                    line-height: 25px;
+                }
+                .director-info-detail {
+                    .director-info-detail-item {
+                        margin-right: 10px;
+                        .director-info-detail-item__text {
+                            font-size: 10px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .insure-cats {
+            width: 100%;
+            margin-bottom: 60px;
+            .insure-cats-item-wrapper {
+                .insure-cats-item {
+                    padding-bottom: 20px;
+                    .insure-cats-item-img {
+                        margin-bottom: 30px;
+                    }
+                    .insure-cats-item-header {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

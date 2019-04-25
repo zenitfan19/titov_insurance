@@ -16,7 +16,14 @@ $(document).ready(function () {
       });
       $(".news-block-item.wide.video").on("mouseleave", function(){
         $(this).find('.news-block-item-background > video').get(0).pause();        
-      });  
+      }); 
+      
+      $(".news-block-item").on("mouseover", function(){
+        $(this).find('.news-block-item-text').slideDown();                        
+      });
+      $(".news-block-item").on("mouseleave", function(){
+        $(this).find('.news-block-item-text').slideUp();        
+      });
       
       $(document).on('click', '.hamburger', function () {       
         $(document).find('.header-mobile-menu').addClass('active fadeInDown animated');
@@ -67,4 +74,15 @@ $(document).ready(function () {
         }
         $(this).find('img').addClass('animated fadeInRight');        
       }); 
+      $(document).on('click', '.news-block-item', function () { 
+        console.log('нажал на новость');      
+        if($(this).hasClass('video')) { 
+          console.log('есть видео');         
+        } else if($(this).find('.news-block-item-article-link').first() != undefined) {
+          console.log('всё норм');
+          window.location = $(this).find('.news-block-item-article-link').first().attr('href');
+        } else {
+          console.log('что-то не так');
+        }
+      });
 });
