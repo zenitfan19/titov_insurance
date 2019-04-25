@@ -138,3 +138,58 @@ body {
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .header {
+        padding: 0 10px;
+        height: 70px;
+        .header-mobile-menu {
+            top: 70px;
+            .header-links {
+                .header-menu__link {
+                    font-size: 14px;
+                    line-height: 33px;
+                }
+            }
+        }
+        .hamburger.is-active {
+            .hamburger-box {
+                .hamburger-inner {
+                    &:before {
+                        top: 0;
+                    }
+                }
+            }
+        }
+        .hamburger {
+            .hamburger-box {
+                width: 23px;
+                height: 20px;
+                .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+                    width: 23px;
+                    height: 2px;
+                }
+                .hamburger-inner:before {
+                    top: -7px;
+                }
+                .hamburger-inner:after {
+                    top: -15px;
+                }
+            }
+        }
+        .header-title {
+            .header-title__heading {
+                font-size: 14px;
+            }
+            .header-title__subheading {
+                font-size: 10px;
+            }
+        }
+        .header-buttons {
+            display: none;
+        }
+        .header-buttons-mobile {
+            display: block;
+            margin-left: auto;
+        }
+    }
+}

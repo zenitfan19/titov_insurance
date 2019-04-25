@@ -25,7 +25,16 @@ $(document).ready(function () {
       $(".news-block-item").on("mouseleave", function(){
         $(this).find('.news-block-item-text').slideUp();        
       });
-      
+
+      $(".footer-content-item").not($(".footer-content-item").eq(0)).on("click", function(){
+        if($(this).hasClass('active')) {
+          $(this).find('.footer-content-item-content').slideUp();          
+        } else {
+          $(this).find('.footer-content-item-content').slideDown();
+        }        
+        $(this).toggleClass('active');                        
+      });
+
       $(document).on('click', '.hamburger', function () {       
         $(document).find('.header-mobile-menu').addClass('active fadeInDown animated');
         if ($(this).hasClass('is-active')) {
