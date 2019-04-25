@@ -16,6 +16,8 @@
             .useful-articles-content-item {
                 width: 420px;
                 padding: 20px;
+                text-decoration: none;
+                color: #111;
                 &:hover {
                     background-color: rgba(0, 168, 107, 0.2);                    
                 }
@@ -189,13 +191,18 @@
                     }
                 }
                 .prof-insure-block-item {
+                    cursor: pointer;
+                    text-decoration: none;
+                    display: inline-block;
+                    color: #111;
+                    width: 100%;
                     &:last-child {
                         margin-bottom: 0;
                     }
                     margin-bottom: 40px;
                     .prof-insure-block-item__header {
                         margin-bottom: 20px;
-                        font-weight: 600;
+                        font-weight: 600;                        
                     }
                     .prof-insure-block-item__text {
                         font-size: 14px;
@@ -211,6 +218,9 @@
             }
         }
     }
+    .insure-cats.additional {
+        display: none;
+    }
     .insure-cats {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -219,6 +229,7 @@
         margin: 0 auto;
         margin-bottom: 100px;
         .insure-cats-item-wrapper {
+            text-decoration: none;
             &:not(:active):hover {
                 .insure-cats-item {
                     transform: translateY(-5px);
@@ -243,6 +254,9 @@
             border-radius: 7px;            
             .insure-cats-item-img {
                 margin-bottom: 50px;
+            }
+            .insure-cats-item-header {
+                color: #111;                
             }
 
         }

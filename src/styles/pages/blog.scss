@@ -18,6 +18,9 @@
         .news-block-item.wide {
             width: 690px;
         }
+        .news-block-item.video {
+            overflow: hidden;
+        }
         .news-block-item {
             width: 335px; 
             height: 400px;
@@ -67,6 +70,7 @@
                     width: 100%;
                     height: 100%;
                     border-radius: 5px;
+                    transform: scaleY(1.03);
                 }
             }
             .tag-search {

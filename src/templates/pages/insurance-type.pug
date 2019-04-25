@@ -46,9 +46,9 @@ block content
                 .what-to-insure-main
                     span Виды страхового покрытия
                 .what-to-insure-control
-                    input(type="checkbox", name="insurance-description-type-1" id="insurance-description-type-1")
-                    label(for="insurance-description-type-1") Дополнительное страхование
-            .insurance-description-content
+                    input(type="checkbox", name="insurance-description-type" id="insurance-description-type")
+                    label(for="insurance-description-type") Дополнительное страхование
+            .insurance-description-content.type
                 .insurance-description-content-img
                     img(src="assets/images/car.jpg", alt="")
                 .insurance-description-content-info
@@ -73,6 +73,31 @@ block content
                             span Полная гибель
                         .insurance-description-content-info-paragraph-text
                             span Выплата страхового возмещения при повреждении автомобиля, когда стоимость ремонта превышает 65% от его стоимости
+            .insurance-description-content.type.additional
+                .insurance-description-content-img
+                    img(src="assets/images/car.jpg", alt="")
+                .insurance-description-content-info
+                    .insurance-description-content-info-paragraph
+                        .insurance-description-content-info-paragraph-title
+                            span Кража
+                        .insurance-description-content-info-paragraph-text
+                            span Полис включает защиту от кражи, грабежа, разбоя или угона застрахованной машины преступниками
+                    .insurance-description-content-info-paragraph
+                        .insurance-description-content-info-paragraph-title
+                            span Разрушение
+                        .insurance-description-content-info-paragraph-text
+                            span Компенсация в случае ДТП, пожара, взрыва, природных явлений,
+                            | механических повреждений и противоправных действий третьих лиц.
+                            | При повреждении стекол справки не требуются<br><br>
+                        .insurance-description-content-info-paragraph-text
+                            span Покрытие включает в себя опцию "Fast Track": Страховая компания договорится
+                            | со СТОА (станция технического обслуживания автомобилей) о ремонте и передаст
+                            | данные клиента для связи. Нет необходимости ожидать приезда эксперта для осмотра автомобиля
+                    .insurance-description-content-info-paragraph
+                        .insurance-description-content-info-paragraph-title
+                            span Утрата
+                        .insurance-description-content-info-paragraph-text
+                            span Выплата страхового возмещения при повреждении автомобиля, когда стоимость ремонта превышает 65% от его стоимости
         .insurance-description
             .insurance-description-title
                 span Быстрое и простое оформление полиса
@@ -80,9 +105,9 @@ block content
                 .what-to-insure-main
                     span При оформлении
                 .what-to-insure-control
-                    input(type="checkbox", name="insurance-description-type-2" id="insurance-description-type-2")
-                    label(for="insurance-description-type-2") При страховом случае
-            .insurance-description-content
+                    input(type="checkbox", name="insurance-description-event" id="insurance-description-event")
+                    label(for="insurance-description-event") При страховом случае
+            .insurance-description-content.event
                 .insurance-description-content-img
                     img(src="assets/images/passport.jpg", alt="")
                 .insurance-description-content-info
@@ -92,6 +117,16 @@ block content
                         span СТС или ПТС
                     .insurance-description-content-info-item
                         span Водительские удостоверения участников полиса
+            .insurance-description-content.event.additional
+                .insurance-description-content-img
+                    img(src="assets/images/passport.jpg", alt="")
+                .insurance-description-content-info
+                    .insurance-description-content-info-item
+                        span Водительское удостоверение
+                    .insurance-description-content-info-item
+                        span СТС или ПТС
+                    .insurance-description-content-info-item
+                        span Тех. паспорт
         .insurance-form
             .insurance-form-title
                 span Рассчитать стоимость КАСКО

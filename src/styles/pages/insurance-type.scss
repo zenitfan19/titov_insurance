@@ -134,6 +134,12 @@
         margin-top: 50px;
         margin-bottom: 60px;        
     }
+    .insurance-description-content.type.additional {
+        display: none;
+    }
+    .insurance-description-content.event.additional {
+        display: none;
+    }
     .insurance-description-content {
         display: flex;
         align-items: center;

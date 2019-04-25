@@ -2,15 +2,18 @@
     .hamburger.hamburger--collapse
             .hamburger-box
                 .hamburger-inner
-    .header-title 
+    a(href="index.html").header-title 
         .header-title__heading Сергей Титов
         .header-title__subheading Директор страхового агенства    
     .header-menu    
-        a.header-menu__link(href="incidents.html") О агентстве
-        a.header-menu__link(href="society.html") Авто
-        a.header-menu__link(href="politics.html") Путешествия
-        a.header-menu__link(href="sport.html") Недвижимость
-        a.header-menu__link(href="culture.html") Здоровье        
+        a.header-menu__link(href="about.html") Об агентстве
+        a.header-menu__link(href="insurance-type.html") Авто
+        a.header-menu__link(href="insurance-type.html") Путешествия
+        a.header-menu__link(href="insurance-type.html") Недвижимость
+        a.header-menu__link(href="insurance-type.html") Здоровье        
+    .header-buttons-mobile
+        a
+            img(src="assets/images/mobile-phone.svg", alt="")
     .header-buttons
         a.header-buttons__phone
             span +7 (812) 987-65-43
@@ -20,7 +23,14 @@
             img(src="assets/images/vk.svg", alt="") 
         .btn
             a.header-buttons__order
-                span Заказать звонок       
+                span Заказать звонок
+    nav.header-mobile-menu        
+        .header-links
+            a.header-menu__link(href="about.html") Об агентстве
+            a.header-menu__link(href="insurance-type.html") Авто
+            a.header-menu__link(href="insurance-type.html") Путешествия
+            a.header-menu__link(href="insurance-type.html") Недвижимость
+            a.header-menu__link(href="insurance-type.html") Здоровье            
         
     
             
