@@ -1,4 +1,6 @@
 .main-container.about-page {
+    width: 100%;
+    box-sizing: border-box;
     .breadcrumbs {
         position: absolute;
     }
@@ -57,6 +59,7 @@
                         margin-bottom: 20px;
                         .contact-us-form-content-form-input-group.message {
                             textarea {
+                                box-sizing: border-box;
                                 height: 120px;
                                 width: 100%;                                
                                 border: 1px solid #C6C6C6;
@@ -117,6 +120,9 @@
     }
     .page-img {
         margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
     }
     .page-text {
         width: 925px;
@@ -147,6 +153,114 @@
             .page-column-content-item-text {
                 line-height: 37px;
                 text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1439px) {
+    .main-container.about-page {
+        .contact-us-form {
+            padding-left: 0;
+            .contact-us-form-content {
+                .contact-us-form-content-form {
+                    padding-right: 0;
+                    width: 100%;
+                    form {
+                        width: 85%;
+                    }                    
+                }
+            }
+        }        
+    }
+}
+@media screen and (max-width: 1264px) {
+    .main-container.about-page {
+        .contact-us-form {            
+            .contact-us-form-content {
+                .contact-us-form-content-map {
+                    iframe {
+                        width: 46vw;
+                        height: 40vw;
+                    }
+                }
+                .contact-us-form-content-form { 
+                    border-bottom: none;
+                    height: 40vw;                  
+                    form {
+                        width: 95%;
+                    }                    
+                }
+            }
+        }        
+    }
+}
+@media screen and (max-width: 1024px) {
+    .main-container.about-page {
+        .page-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .page-img {
+            margin-bottom: 20px;
+        }
+        .page-text {
+            font-size: 14px;
+            line-height: 29px;
+            width: 80%;
+        }
+        .contact-us-form {
+            .contact-us-form-title {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            .contact-us-form-content {
+                .contact-us-form-content-form {
+                    padding-left: 20px;
+                    form {
+                        .contact-us-form-content-form-row {
+                            .contact-us-form-content-form-input-group.message {
+                                textarea {
+                                    height: 75px;
+                                }
+                            }
+                            .contact-us-form-content-form-input-group {
+                                span {
+                                    font-size: 12px;
+                                }
+                                input {
+                                    height: 55px;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                    .contact-us-form-content-form-title {
+                        margin-bottom: 20px;
+                        font-size: 14px;
+                    }
+                    .privacy-agreement {
+                        margin-bottom: 20px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .page-column-content {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 40px;
+            .page-column-content-item {
+                flex: 0 1 80%;
+                margin-right: 0;
+                margin-bottom: 30px;
+                .page-column-content-item-title {
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                }
+                .page-column-content-item-text {
+                    font-size: 12px;
+                    line-height: 25px;
+                }
             }
         }
     }

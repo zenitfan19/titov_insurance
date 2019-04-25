@@ -28,7 +28,8 @@
             display: flex;
             align-items: flex-end;            
             margin-bottom: 20px;           
-            border-radius: 5px;   
+            border-radius: 5px;
+            cursor: pointer; 
             .news-block-item-article-link {
                 display: none;
             }                  

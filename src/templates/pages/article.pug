@@ -4,21 +4,21 @@ block variables
     - var title = 'Статья'    
 
 block content
-    .main-container.article-page
-        .article-page-header
-            .article-page-header-upline
-                .breadcrumbs
-                    a.breadcrumbs-item(href="") Главная
-                    img(src="assets/images/breadcrumbs-arrow-white.svg", alt="")
-                    a.breadcrumbs-item(href="") Статья
-                .article-block-item-date
-                    img(src="assets/images/date-icon.svg", alt="")                    
-                    span 15.05.2019
-                .article-block-item-time
-                    img(src="assets/images/time-icon.svg", alt="")                
-                    span Время чтения: 5 минут            
-            .page-title
-                span Как грамотно выбрать тип страховки
+    .article-page-header
+        .article-page-header-upline
+            .breadcrumbs
+                a.breadcrumbs-item(href="") Главная
+                img(src="assets/images/breadcrumbs-arrow-white.svg", alt="")
+                a.breadcrumbs-item(href="") Статья
+            .article-block-item-date
+                img(src="assets/images/date-icon.svg", alt="")                    
+                span 15.05.2019
+            .article-block-item-time
+                img(src="assets/images/time-icon.svg", alt="")                
+                span Время чтения: 5 минут            
+        .page-title
+            span Как грамотно выбрать тип страховки
+    .main-container.article-page        
         .article-page-content
             .article-page-content-row
                 .article-page-content-row-left
@@ -139,6 +139,7 @@ block content
     .main-container.blog-page
         .news-block            
             .news-block-item
+                a.news-block-item-article-link(href="article.html")
                 .news-block-item-background
                     img(src="assets/images/new1-background.jpg", alt="")
                 .tag-search
@@ -158,6 +159,7 @@ block content
                         img.black(src="assets/images/time-icon-black.svg", alt="")
                         span Время чтения 5 минут
             .news-block-item
+                a.news-block-item-article-link(href="article.html")
                 .news-block-item-background
                     img(src="assets/images/new2-background.jpg", alt="")
                 .tag-search
@@ -177,6 +179,7 @@ block content
                         img.black(src="assets/images/time-icon-black.svg", alt="")
                         span Время чтения 5 минут
             .news-block-item
+                a.news-block-item-article-link(href="article.html")
                 .news-block-item-background
                     img(src="assets/images/new1-background.jpg", alt="")
                 .tag-search
@@ -196,6 +199,7 @@ block content
                         img.black(src="assets/images/time-icon-black.svg", alt="")
                         span Время чтения 5 минут
             .news-block-item
+                a.news-block-item-article-link(href="article.html")
                 .news-block-item-background
                     img(src="assets/images/new2-background.jpg", alt="")
                 .tag-search

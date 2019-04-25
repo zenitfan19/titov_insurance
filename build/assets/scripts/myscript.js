@@ -12,6 +12,7 @@ $(document).ready(function () {
       });  
 
       $(".news-block-item.wide.video").on("mouseover", function(){
+        $(this).find('.news-block-item-background > video').prop('volume', 0);
         $(this).find('.news-block-item-background > video').get(0).play();                        
       });
       $(".news-block-item.wide.video").on("mouseleave", function(){
@@ -74,15 +75,10 @@ $(document).ready(function () {
         }
         $(this).find('img').addClass('animated fadeInRight');        
       }); 
-      $(document).on('click', '.news-block-item', function () { 
-        console.log('нажал на новость');      
-        if($(this).hasClass('video')) { 
-          console.log('есть видео');         
-        } else if($(this).find('.news-block-item-article-link').first() != undefined) {
-          console.log('всё норм');
+      $(document).on('click', '.news-block-item', function () {             
+        if($(this).hasClass('video')) {                   
+        } else if($(this).find('.news-block-item-article-link').first() != undefined) {          
           window.location = $(this).find('.news-block-item-article-link').first().attr('href');
-        } else {
-          console.log('что-то не так');
         }
       });
 });
