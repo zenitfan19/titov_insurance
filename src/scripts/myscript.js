@@ -32,7 +32,9 @@ $(document).ready(function () {
         $(this).find('.news-block-item-date').css('color', '#fff');       
       });
       $(".news-block-item").not('.video').on("touchstart", function(){
-        $(this).find('.news-block-item-text').slideDown();        
+        $(this).find('.news-block-item-text').slideDown();
+        $('.news-block-item').css('background-color', 'unset'); 
+        $('.news-block-item').find('.news-block-item-date').css('color', '#fff');
         if($(window).width() < 787) {
         $(this).css('background-color', '#fff');
         $(this).find('.news-block-item-date').css('color', '#111');
