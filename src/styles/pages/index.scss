@@ -637,6 +637,7 @@
         .insure-cats {
             grid-template-columns: 1fr 1fr;
             grid-row-gap: 20px;
+            grid-column-gap: 20px;
             margin-bottom: 50px;
             .insure-cats-item-wrapper {
                 .insure-cats-item {

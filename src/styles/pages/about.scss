@@ -269,7 +269,7 @@
     .main-container.about-page {
         .breadcrumbs {
             position: absolute;
-            top: 80px;
+            top: 70px;
             img {
                 width: 4px;
                 height: 7px
@@ -342,6 +342,9 @@
         .page-title {
             font-size: 14px;
             line-height: 16px;
+        }
+        .page-img {
+            margin-bottom: 15px;
         }
     }
 }

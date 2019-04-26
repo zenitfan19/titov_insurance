@@ -211,6 +211,8 @@
 @media screen and (max-width: 1024px) {
     .fullscreen-container {
         margin-bottom: 50px;
+        background-image: url('../images/fullscreen-background-tablet.jpg');
+        height: 50vw;
         .fullscreen-container-info {
             .fullscreen-container-info-text {
                 font-size: 14px;
@@ -289,7 +291,7 @@
 }
 @media screen and (max-width: 850px) {
     .fullscreen-container {
-        height: 40vw;
+        height: 50vw;
     }
 }
 @media screen and (max-width: 767px) {
@@ -368,7 +370,7 @@
     }
     .fullscreen-container {
         height: 350px;
-        padding-bottom: 40px;
+        padding-bottom: 40px;        
         .fullscreen-container-info {
             width: 75%;
             .fullscreen-container-info-title {
@@ -385,5 +387,10 @@
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 320px) {
+    .fullscreen-container {
+        background-image: url('../images/fullscreen-background-mobile.jpg');
     }
 }

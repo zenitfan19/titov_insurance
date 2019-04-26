@@ -295,11 +295,11 @@
                         margin-bottom: 0;
                     }
                     .article-page-content-row-header {
-                        font-size: 12px;
+                        font-size: 14px;
                         line-height: 25px;
                     }
                     .article-page-content-row-text {
-                        font-size: 10px;
+                        font-size: 12px;
                         line-height: 20px;
                     }
                 }
@@ -315,6 +315,7 @@
                     .article-page-content-row-right {
                         order: 1;
                         margin-right: auto;
+                        margin-top: 20px;
                         .article-page-content-row-author {
                             margin-bottom: 30px;
                             .article-page-content-row-author-img {
@@ -348,6 +349,7 @@
         padding: 10px;
         margin-top: 40px;
         display: flex;
+        margin-bottom: 0;
         flex-direction: column;
         .page-title {
             font-size: 14px;
