@@ -17,6 +17,9 @@
     .article-page-header-upline {
         display: flex;            
         .breadcrumbs {
+            img.black {
+                display: none;
+            }
             margin-right: 65px;
             a {
                 color: #fff;
@@ -249,6 +252,134 @@
                     margin-right: 5px;
                 }
             }            
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .main-container.article-page {
+        .article-page-content {
+            .article-page-content-row.additional {
+                .article-page-content-row-left {
+                    padding: 20px 10px;
+                }
+            }
+            .article-page-content-row.infographics {
+                .article-page-content-row-left {
+                    .article-page-content-row-table {
+                        .article-page-content-row-table-header {
+                            font-size: 12px;
+                            line-height: 25px;
+                        }
+                        table {
+                            td, th {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .article-page-content-row.next {
+                .article-page-content-row-left {
+                    .article-page-content-row-header {
+                        margin-bottom: 0;
+                    }
+                }
+                .article-page-content-row-right {
+                    display: none;
+                }
+            }
+            .article-page-content-row {
+                flex-direction: column;
+                .article-page-content-row-left {
+                    .article-page-content-row-social-btn {
+                        margin-bottom: 0;
+                    }
+                    .article-page-content-row-header {
+                        font-size: 12px;
+                        line-height: 25px;
+                    }
+                    .article-page-content-row-text {
+                        font-size: 10px;
+                        line-height: 20px;
+                    }
+                }
+                .article-page-content-row-right {
+                    margin-top: 30px;
+                    .article-page-content-row-link {
+                        font-size: 10px;
+                        line-height: 14px;
+                        width: 100%;
+                    }
+                }
+                &:first-child {
+                    .article-page-content-row-right {
+                        order: 1;
+                        margin-right: auto;
+                        .article-page-content-row-author {
+                            margin-bottom: 30px;
+                            .article-page-content-row-author-img {
+                                margin-right: 10px;
+                                img {
+                                    width: 35px;
+                                    height: 35px;
+                                }
+                            }
+                            .article-page-content-row-author-info {
+                                .article-page-content-row-author-info-name {
+                                    font-size: 12px;
+                                }
+                                .article-page-content-row-author-info-appointment {
+                                    font-size: 8px;
+                                }
+                            }
+                        }
+                    }
+                    .article-page-content-row-left {
+                        order: 2;
+                    }
+                }
+                .article-page-content-row-left, .article-page-content-row-right {
+                    flex: 0 1 100%;
+                }
+            }
+        }
+    }
+    .article-page-header {
+        padding: 10px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        .page-title {
+            font-size: 14px;
+            line-height: 19px;
+            margin-top: auto;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .article-page-header-upline {
+            .article-block-item-date, .article-block-item-time {
+                font-size: 10px;
+                margin-right: 20px;
+                img {                    
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+            .breadcrumbs {
+                img {
+                    display: none;
+                    width: 4px;
+                    height: 7px;
+                }
+                img.black {
+                    display: inline;
+                }
+                position: absolute;
+                top: 80px;
+                a {
+                    color: #111;
+                }
+            }     
         }
     }
 }
