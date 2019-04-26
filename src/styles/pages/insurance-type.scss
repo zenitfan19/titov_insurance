@@ -292,3 +292,98 @@
         height: 40vw;
     }
 }
+@media screen and (max-width: 767px) {
+    .main-container {
+        .insurance-form {
+            width: 100%;
+            .insurance-form-title {
+                margin-top: 20px;
+            }
+            .insurance-form-progress {
+                .insurance-form-progress-title {
+                    font-size: 12px;
+                }
+                .insurance-form-progress-bar {
+                    width: 300px;
+                }                
+            }
+            form {
+                .insurance-form-row.two-input {
+                    flex-wrap: wrap;
+                    .insurance-form-row-input-group {
+                        width: 100%;
+                        &:first-child {
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .insurance-description {
+            &:nth-child(2) {
+                .what-to-insure {
+                    width: 265px;
+                }
+            }
+            &:nth-child(3) {
+                .what-to-insure {
+                    width: 220px;
+                }
+            }
+            .what-to-insure {
+                margin-bottom: 20px;
+            }
+            .insurance-description-content {
+                flex-wrap: wrap;
+                .insurance-description-content-img, .insurance-description-content-info {
+                    width: 100%;
+                }
+                .insurance-description-content-img {
+                    display: flex;
+                    justify-content: center;
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                    img {
+                        width: 100%;
+                        height: 67.8vw;
+                        max-width: 350px;
+                        max-height: 230px;
+                    }
+                }
+            }
+        }
+        .our-advantages {
+            margin-bottom: 0;
+            .our-advantages-content {
+                flex-wrap: wrap;
+                .our-advantages-content-item {
+                    width: 100%;
+                    margin-bottom: 50px;                    
+                    .our-advantages-content-item-title {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .fullscreen-container {
+        height: 350px;
+        padding-bottom: 40px;
+        .fullscreen-container-info {
+            width: 75%;
+            .fullscreen-container-info-title {
+                font-size: 24px;
+            }
+            .fullscreen-container-info-text {
+                font-size: 12px;
+                span {
+                    &:first-child {
+                        display: inline-block;
+                        margin-bottom: 20px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

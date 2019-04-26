@@ -8,7 +8,7 @@ $(document).ready(function () {
         if(form_btn_counter === 1)
         $('.insurance-form-progress-bar-green').css('width', '208px'); 
         else if(form_btn_counter === 2)
-        $('.insurance-form-progress-bar-green').css('width', '100%').css('border-radius', '50px');
+        $('.insurance-form-progress-bar-green').css('width', '101%').css('border-radius', '50px');
       });  
 
       $(".news-block-item.wide.video").on("mouseover", function(){
