@@ -35,7 +35,9 @@ $(document).ready(function () {
         $(this).find('.news-block-item-text').slideDown();
         $('.news-block').find('.news-block-item').css('background-color', 'unset'); 
         $('.news-block').find('.news-block-item').find('.news-block-item-date').css('color', '#fff');
-        $('.news-block').find('.news-block-item').find('.news-block-item-text').slideUp();
+        $('.news-block').find('.news-block-item').each(function () {
+          $(this).find('.news-block-item-text').slideUp();
+        });
         if($(window).width() < 787) {
         $(this).css('background-color', '#fff');
         $(this).find('.news-block-item-date').css('color', '#111');
