@@ -43,10 +43,10 @@ block content
             .insurance-description-title
                 span Полис КАСКО
             .what-to-insure
-                .what-to-insure-main
+                .what-to-insure-main.what-to-insure-label
                     span Виды страхового покрытия
                 .what-to-insure-control
-                    input(type="checkbox", name="insurance-description-type" id="insurance-description-type")
+                    input(type="checkbox" class="insurance-switcher" name="insurance-description-type" id="insurance-description-type")
                     label(for="insurance-description-type") Дополнительное страхование
             .insurance-description-content.type
                 .insurance-description-content-img
@@ -102,10 +102,10 @@ block content
             .insurance-description-title
                 span Быстрое и простое оформление полиса
             .what-to-insure
-                .what-to-insure-main
+                .what-to-insure-main.what-to-insure-label
                     span При оформлении
                 .what-to-insure-control
-                    input(type="checkbox", name="insurance-description-event" id="insurance-description-event")
+                    input(type="checkbox" class="insurance-switcher" name="insurance-description-event" id="insurance-description-event")
                     label(for="insurance-description-event") При страховом случае
             .insurance-description-content.event
                 .insurance-description-content-img
@@ -157,10 +157,63 @@ block content
                 .insurance-form-row
                     .insurance-form-row-input-group
                         input(type="text" required)
-                        span.placeholder Регион прописки собственника    
-            .btn.form-next-btn
-                a(href="")
-                    span Далее
+                        span.placeholder Регион прописки собственника
+            form
+                .insurance-form-row.two-input
+                    .insurance-form-row-input-group
+                        input(type="text" required)
+                        span.placeholder ФИО
+                    .insurance-form-row-input-group
+                        input(type="text" required)
+                        span.placeholder Телефон
+                .insurance-form-row.two-input
+                    .insurance-form-row-input-group
+                        input(type="text" required)
+                        span.placeholder E-mail
+                    .insurance-form-row-input-group
+                        input(type="text" required)
+                        span.placeholder Мощность ЛС
+                .insurance-form-row
+                    .insurance-form-row-input-group
+                        input(type="text" required)
+                        span.placeholder Текущая страховка                  
+                .insurance-form-row
+                    .insurance-form-row-input-group
+                        input(type="text" required)
+                        span.placeholder Регион прописки собственника
+            form
+                .insurance-form-row.two-input
+                    .insurance-form-row-input-group
+                        input(type="text" required)
+                        span.placeholder ФИО
+                    .insurance-form-row-input-group
+                        input(type="text" required)
+                        span.placeholder Телефон
+                .insurance-form-row.two-input
+                    .insurance-form-row-input-group
+                        input(type="text" required)
+                        span.placeholder E-mail
+                    .insurance-form-row-input-group
+                        input(type="text" required)
+                        span.placeholder Мощность ЛС
+                .insurance-form-row
+                    .insurance-form-row-input-group
+                        input(type="text" required)
+                        span.placeholder Текущая страховка                  
+                .insurance-form-row
+                    .insurance-form-row-input-group
+                        input(type="text" required)
+                        span.placeholder Регион прописки собственника
+            .insurance-form-buttons
+                .form-previous-btn
+                    a(href="")
+                        span Назад
+                .btn.form-next-btn
+                    a(href="")
+                        span Далее
+                .btn.send-btn
+                    a(href="")
+                        span Оформить
                 
                 
                     

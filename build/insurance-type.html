@@ -56,9 +56,9 @@
       <div class="insurance-description">
         <div class="insurance-description-title"><span>Полис КАСКО</span></div>
         <div class="what-to-insure">
-          <div class="what-to-insure-main"><span>Виды страхового покрытия</span></div>
+          <div class="what-to-insure-main what-to-insure-label"><span>Виды страхового покрытия</span></div>
           <div class="what-to-insure-control">
-            <input type="checkbox" name="insurance-description-type" id="insurance-description-type">
+            <input class="insurance-switcher" type="checkbox" name="insurance-description-type" id="insurance-description-type">
             <label for="insurance-description-type">Дополнительное страхование</label>
           </div>
         </div>
@@ -110,9 +110,9 @@
       <div class="insurance-description">
         <div class="insurance-description-title"><span>Быстрое и простое оформление полиса</span></div>
         <div class="what-to-insure">
-          <div class="what-to-insure-main"><span>При оформлении</span></div>
+          <div class="what-to-insure-main what-to-insure-label"><span>При оформлении</span></div>
           <div class="what-to-insure-control">
-            <input type="checkbox" name="insurance-description-event" id="insurance-description-event">
+            <input class="insurance-switcher" type="checkbox" name="insurance-description-event" id="insurance-description-event">
             <label for="insurance-description-event">При страховом случае</label>
           </div>
         </div>
@@ -165,11 +165,71 @@
           </div>
           <div class="insurance-form-row">
             <div class="insurance-form-row-input-group">
-              <input type="text" required><span class="placeholder">Регион прописки собственника    </span>
+              <input type="text" required><span class="placeholder">Регион прописки собственника</span>
             </div>
           </div>
         </form>
-        <div class="btn form-next-btn"><a href=""><span>Далее</span></a></div>
+        <form>
+          <div class="insurance-form-row two-input">
+            <div class="insurance-form-row-input-group">
+              <input type="text" required><span class="placeholder">ФИО</span>
+            </div>
+            <div class="insurance-form-row-input-group">
+              <input type="text" required><span class="placeholder">Телефон</span>
+            </div>
+          </div>
+          <div class="insurance-form-row two-input">
+            <div class="insurance-form-row-input-group">
+              <input type="text" required><span class="placeholder">E-mail</span>
+            </div>
+            <div class="insurance-form-row-input-group">
+              <input type="text" required><span class="placeholder">Мощность ЛС</span>
+            </div>
+          </div>
+          <div class="insurance-form-row">
+            <div class="insurance-form-row-input-group">
+              <input type="text" required><span class="placeholder">Текущая страховка                  </span>
+            </div>
+          </div>
+          <div class="insurance-form-row">
+            <div class="insurance-form-row-input-group">
+              <input type="text" required><span class="placeholder">Регион прописки собственника</span>
+            </div>
+          </div>
+        </form>
+        <form>
+          <div class="insurance-form-row two-input">
+            <div class="insurance-form-row-input-group">
+              <input type="text" required><span class="placeholder">ФИО</span>
+            </div>
+            <div class="insurance-form-row-input-group">
+              <input type="text" required><span class="placeholder">Телефон</span>
+            </div>
+          </div>
+          <div class="insurance-form-row two-input">
+            <div class="insurance-form-row-input-group">
+              <input type="text" required><span class="placeholder">E-mail</span>
+            </div>
+            <div class="insurance-form-row-input-group">
+              <input type="text" required><span class="placeholder">Мощность ЛС</span>
+            </div>
+          </div>
+          <div class="insurance-form-row">
+            <div class="insurance-form-row-input-group">
+              <input type="text" required><span class="placeholder">Текущая страховка                  </span>
+            </div>
+          </div>
+          <div class="insurance-form-row">
+            <div class="insurance-form-row-input-group">
+              <input type="text" required><span class="placeholder">Регион прописки собственника</span>
+            </div>
+          </div>
+        </form>
+        <div class="insurance-form-buttons">
+          <div class="form-previous-btn"><a href=""><span>Назад</span></a></div>
+          <div class="btn form-next-btn"><a href=""><span>Далее</span></a></div>
+          <div class="btn send-btn"><a href=""><span>Оформить</span></a></div>
+        </div>
       </div>
     </div>
     <script src="assets/scripts/jquery-3.3.1.min.js"> </script>

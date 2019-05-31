@@ -20,6 +20,26 @@
         }
     }
 }
+.insurance-form-buttons {
+    display: flex;
+    justify-content: center;
+}
+.insurance-form .btn.send-btn {
+    display: none;
+}
+.form-previous-btn {
+    width: 152px;
+    height: 39px;    
+    justify-content: center;
+    align-items: center;
+    display: none;
+    a {
+        background-color: unset;
+        color: rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        
+    }
+}
 .insurance-form {
     width: 650px;
     margin: 0 auto;
@@ -33,6 +53,9 @@
         }
     }
     form {
+        &:nth-child(4), &:nth-child(5) {
+            display: none;
+        }
         .insurance-form-row {
             width: 100%;
             margin-bottom: 30px;

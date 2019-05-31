@@ -4,12 +4,36 @@ $(document).ready(function () {
   var form_btn_counter = 0;
     $('.form-next-btn').click(function(event) {
         event.preventDefault(); 
+        var button = $(this); 
         form_btn_counter++;
+        $('.insurance-form form').eq(form_btn_counter-1).css('display', 'none');
+        $('.insurance-form form').eq(form_btn_counter).css('display', 'block');
+        $('.form-previous-btn').css('display', 'flex');
+        if(form_btn_counter === 1)
+        $('.insurance-form-progress-bar-green').css('width', '208px'); 
+        else if(form_btn_counter === 2) {
+        $('.insurance-form-progress-bar-green').css('width', '101%').css('border-radius', '50px');
+        button.css('display', 'none');
+        $('.send-btn').css('display', 'flex');
+        }
+      });  
+      $('.form-previous-btn').click(function(event) {
+        event.preventDefault();
+        var button = $(this); 
+        form_btn_counter--;
+        $('.insurance-form form').eq(form_btn_counter).css('display', 'block');
+        $('.insurance-form form').eq(form_btn_counter+1).css('display', 'none');
+        $('.form-next-btn').css('display', 'flex');
+        $('.send-btn').css('display', 'none');
         if(form_btn_counter === 1)
         $('.insurance-form-progress-bar-green').css('width', '208px'); 
         else if(form_btn_counter === 2)
         $('.insurance-form-progress-bar-green').css('width', '101%').css('border-radius', '50px');
-      });  
+        else if(form_btn_counter === 0) {
+        $('.insurance-form-progress-bar-green').css('width', '104px');
+        button.css('display', 'none');
+        }
+      });
 
       $(".news-block-item.wide.video").on("mouseover", function(){
         $(this).find('.news-block-item-background > video').prop('volume', 0);
@@ -62,33 +86,42 @@ $(document).ready(function () {
         }
         $(this).toggleClass('is-active');
       });
+      $(document).on('change', '.insurance-switcher', function () {          
+        if($(this).prop('checked')) {               
+          $(this).closest('.what-to-insure').find(('.what-to-insure-control label')).addClass('what-to-insure-main');
+          $(this).closest('.what-to-insure').find(('.what-to-insure-label')).removeClass('what-to-insure-main').addClass('what-to-insure-control');          
+        } else {          
+          $(this).closest('.what-to-insure').find(('.what-to-insure-control label')).removeClass('what-to-insure-main');
+          $(this).closest('.what-to-insure').find(('.what-to-insure-label')).addClass('what-to-insure-main').removeClass('what-to-insure-control');          
+        }
+      });
       $(document).on('change', '#what-to-insure-switcher', function () {       
-        if($('#what-to-insure-switcher').prop('checked')) {
+        if($('#what-to-insure-switcher').prop('checked')) {          
           $('.insure-cats').css('display', 'none');
           $('.insure-cats.additional').css('display', 'grid');
-        } else {
+        } else {          
           $('.insure-cats').css('display', 'grid');
           $('.insure-cats.additional').css('display', 'none');
         }
       });
-      $(document).on('change', '#insurance-description-event', function () {       
-        if($('#insurance-description-event').prop('checked')) {
+      /*$(document).on('change', '#insurance-description-event', function () {       
+        if($('#insurance-description-event').prop('checked')) {          
           $('.insurance-description-content.event').css('display', 'none');
           $('.insurance-description-content.event.additional').css('display', 'flex');
-        } else {
+        } else {          
           $('.insurance-description-content.event').css('display', 'flex');
           $('.insurance-description-content.event.additional').css('display', 'none');
         }
-      });
-      $(document).on('change', '#insurance-description-type', function () {       
-        if($('#insurance-description-type').prop('checked')) {
+      });*/
+      /*$(document).on('change', '#insurance-description-type', function () {       
+        if($('#insurance-description-type').prop('checked')) {          
           $('.insurance-description-content.type').css('display', 'none');
           $('.insurance-description-content.type.additional').css('display', 'flex');
-        } else {
+        } else {         
           $('.insurance-description-content.type').css('display', 'flex');
           $('.insurance-description-content.type.additional').css('display', 'none');
         }
-      });
+      });*/
       $(".useful-articles-content-item__link").on("mouseover", function(){
         if($(this).find('img').hasClass('animated fadeInRight')) {
           $(this).find('img').removeClass('animated fadeInRight');

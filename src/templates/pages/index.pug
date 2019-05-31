@@ -6,10 +6,10 @@ block variables
 block content
     .main-container
         .what-to-insure
-            .what-to-insure-main
+            .what-to-insure-main.what-to-insure-label
                 span Я хочу застраховать
             .what-to-insure-control
-                input(type="checkbox", name="what-to-insure-switcher" id="what-to-insure-switcher")
+                input(type="checkbox" class="insurance-switcher" name="what-to-insure-switcher" id="what-to-insure-switcher")
                 label(for="what-to-insure-switcher") Страховки по типу семьи
         .insure-cats
             a(href="insurance-type.html").insure-cats-item-wrapper
@@ -171,37 +171,43 @@ block content
             .our-team-title
                 span Наша команда
             .our-team-content
-                .our-team-content-item
-                    .our-team-content-img
-                        img(src="assets/images/krutov.png", alt="")
-                    .our-team-content-title
-                        span Александр Семенов                    
-                .our-team-content-item
-                    .our-team-content-img
-                        img(src="assets/images/ivanova.png", alt="")
-                    .our-team-content-title
-                        span Елена Лаврентьева
-                .our-team-content-item
-                    .our-team-content-img
-                        img(src="assets/images/fedotova.png", alt="")
-                    .our-team-content-title
-                        span Мария Титова
-                .our-team-content-item
-                    .our-team-content-img
-                        img(src="assets/images/sidorova.png", alt="")
-                    .our-team-content-title
-                        span Анна Маслянова
-                .our-team-content-item
-                    .our-team-content-img
-                        img(src="assets/images/petrova.png", alt="")
-                    .our-team-content-title
-                        span Елена Ткачук                                                                
+                .our-team-content-item-wrapper
+                    .our-team-content-item
+                        .our-team-content-img
+                            img(src="assets/images/krutov.png", alt="")
+                        .our-team-content-title
+                            span Александр Семенов                    
+                .our-team-content-item-wrapper
+                    .our-team-content-item
+                        .our-team-content-img
+                            img(src="assets/images/ivanova.png", alt="")
+                        .our-team-content-title
+                            span Елена Лаврентьева
+                .our-team-content-item-wrapper
+                    .our-team-content-item
+                        .our-team-content-img
+                            img(src="assets/images/fedotova.png", alt="")
+                        .our-team-content-title
+                            span Мария Титова
+                .our-team-content-item-wrapper
+                    .our-team-content-item
+                        .our-team-content-img
+                            img(src="assets/images/sidorova.png", alt="")
+                        .our-team-content-title
+                            span Анна Маслянова
+                .our-team-content-item-wrapper
+                    .our-team-content-item
+                        .our-team-content-img
+                            img(src="assets/images/petrova.png", alt="")
+                        .our-team-content-title
+                            span Елена Ткачук                                                                
                                                    
         .useful-articles
             .useful-articles-title
                 span Полезные статьи
             .useful-articles-content
                 a(href="article.html").useful-articles-content-item
+                    .useful-articles-content-item__hover-block
                     .useful-articles-content-item__img
                         img(src="assets/images/new1.png", alt="")
                     .useful-articles-content-item__date
@@ -214,6 +220,7 @@ block content
                         span Читать далее
                         img(src="assets/images/arrow.svg", alt="")
                 a(href="article.html").useful-articles-content-item
+                    .useful-articles-content-item__hover-block
                     .useful-articles-content-item__img
                         img(src="assets/images/new2.png", alt="")
                     .useful-articles-content-item__date
@@ -226,6 +233,7 @@ block content
                         span Читать далее
                         img(src="assets/images/arrow.svg", alt="")
                 a(href="article.html").useful-articles-content-item
+                    .useful-articles-content-item__hover-block
                     .useful-articles-content-item__img
                         img(src="assets/images/new3.png", alt="")
                     .useful-articles-content-item__date
