@@ -6,9 +6,17 @@ $(document).ready(function () {
         event.preventDefault(); 
         var button = $(this); 
         form_btn_counter++;
-        $('.insurance-form form').eq(form_btn_counter-1).css('display', 'none');
-        $('.insurance-form form').eq(form_btn_counter).css('display', 'block');
-        $('.form-previous-btn').css('display', 'flex');
+        $('.insurance-form-progress-title .current').html(form_btn_counter+1+' ');
+        $('.insurance-form form').eq(form_btn_counter-1).fadeOut('slow');
+        setTimeout(function() {
+          $('.insurance-form form').eq(form_btn_counter).fadeIn('slow');
+        }, 600);        
+        $('.form-previous-btn').addClass('active');
+        if($('.form-previous-btn').hasClass('active')) {
+          $('.form-next-btn').addClass('shifted');
+        } else {
+          $('.form-next-btn').removeClass('shifted');
+        }
         if(form_btn_counter === 1)
         $('.insurance-form-progress-bar-green').css('width', '208px'); 
         else if(form_btn_counter === 2) {
@@ -21,8 +29,11 @@ $(document).ready(function () {
         event.preventDefault();
         var button = $(this); 
         form_btn_counter--;
-        $('.insurance-form form').eq(form_btn_counter).css('display', 'block');
-        $('.insurance-form form').eq(form_btn_counter+1).css('display', 'none');
+        $('.insurance-form-progress-title .current').html(form_btn_counter+1+' ');
+        $('.insurance-form form').eq(form_btn_counter+1).fadeOut('slow');
+        setTimeout(function() {          
+          $('.insurance-form form').eq(form_btn_counter).fadeIn('slow');
+        }, 600);        
         $('.form-next-btn').css('display', 'flex');
         $('.send-btn').css('display', 'none');
         if(form_btn_counter === 1)
@@ -31,7 +42,12 @@ $(document).ready(function () {
         $('.insurance-form-progress-bar-green').css('width', '101%').css('border-radius', '50px');
         else if(form_btn_counter === 0) {
         $('.insurance-form-progress-bar-green').css('width', '104px');
-        button.css('display', 'none');
+        button.removeClass('active');
+        if($('.form-previous-btn').hasClass('active')) {
+          $('.form-next-btn').addClass('shifted');
+        } else {
+          $('.form-next-btn').removeClass('shifted');
+        }
         }
       });
 
@@ -140,4 +156,11 @@ $(document).ready(function () {
           window.location = $(this).find('.news-block-item-article-link').first().attr('href');
         }
       });
+      $(document).on('click', '.contact-us-form__btn', function (event) {
+        event.preventDefault();        
+        $('.contact-us-form-unsuccess').fadeOut('400');      
+        setTimeout(function() {
+          $('.contact-us-form-success').fadeIn('400');
+        }, 400);       
+      });      
 });

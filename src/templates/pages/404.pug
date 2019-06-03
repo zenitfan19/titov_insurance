@@ -1,0 +1,51 @@
+extends ../template
+
+block variables
+    - var title = 'Страница не найдена'    
+
+block content
+    .main-container.not-found_page
+        .not-found__content
+            .not-found__images
+                img(src="assets/images/404.png", alt="")
+                img(src="assets/images/404_bottom.png", alt="")
+            .not-found__images-tablet
+                img(src="assets/images/404_tablet.png", alt="")
+                img(src="assets/images/404_bottom_tablet.png", alt="")
+            .not-found__images-mobile
+                img(src="assets/images/404_mobile.png", alt="")
+                img(src="assets/images/404_bottom_mobile.png", alt="")
+            .not-found__header
+                span Упс... Такой страницы не существует.
+            .not-found__text
+                span Проверьте написание адреса — может быть, вы просто<br>ошиблись при наборе. А может быть, этой страницы уже нет.
+            a.not-found__link(href="index.html")
+                span На главную 
+
+                
+
+            
+
+                
+                
+
+    
+                
+                
+                    
+
+
+            
+                    
+
+
+                    
+
+
+        
+
+            
+
+            
+
+        

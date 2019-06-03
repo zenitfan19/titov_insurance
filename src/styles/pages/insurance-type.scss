@@ -27,12 +27,25 @@
 .insurance-form .btn.send-btn {
     display: none;
 }
+.btn.form-next-btn {
+    transition: 0.5s;
+    transform: translateX(-76px);
+}
+.btn.form-next-btn.shifted {
+    transform: translateX(0px);
+}
+.form-previous-btn.active {
+    transform: translateX(0px);
+}
 .form-previous-btn {
     width: 152px;
-    height: 39px;    
+    height: 39px;  
+    display: flex;  
     justify-content: center;
     align-items: center;
-    display: none;
+    transform: translateX(-5000px);
+    transition: 0.5s;
+    transition-timing-function: ease;
     a {
         background-color: unset;
         color: rgba(0, 0, 0, 0.5);
@@ -129,6 +142,7 @@
                 width: 104px;
                 height: 17px;
                 border-radius: 50px 0px 0px 50px;
+                transition: 0.5s;
             }
              
         }
@@ -150,7 +164,7 @@
         }
     }
     .insurance-description-title {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 800;
         text-align: center;
     }

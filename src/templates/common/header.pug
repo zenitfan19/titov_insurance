@@ -12,7 +12,7 @@
         a.header-menu__link(href="insurance-type.html") Недвижимость
         a.header-menu__link(href="insurance-type.html") Здоровье        
     .header-buttons-mobile
-        a
+        a(data-fancybox href="#contact-us-form" data-touch="false")
             img(src="assets/images/mobile-phone.svg", alt="")
     .header-buttons
         a.header-buttons__phone
@@ -22,7 +22,7 @@
         a.header-buttons__social(href="")
             img(src="assets/images/vk.svg", alt="") 
         .btn
-            a.header-buttons__order
+            a.header-buttons__order(data-fancybox href="#contact-us-form" data-touch="false")
                 span Заказать звонок
     nav.header-mobile-menu        
         .header-links
@@ -30,7 +30,8 @@
             a.header-menu__link(href="insurance-type.html") Авто
             a.header-menu__link(href="insurance-type.html") Путешествия
             a.header-menu__link(href="insurance-type.html") Недвижимость
-            a.header-menu__link(href="insurance-type.html") Здоровье            
+            a.header-menu__link(href="insurance-type.html") Здоровье  
+    include popup.pug
         
     
             
