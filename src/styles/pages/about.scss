@@ -7,7 +7,8 @@
     .contact-us-form {
         width: 100%;
         padding-left: 138px; 
-        margin-bottom: 100px;       
+        margin-bottom: 100px;
+        box-sizing: border-box;       
         .contact-us-form-title {
             font-size: 36px;
             font-weight: bold;
@@ -27,7 +28,7 @@
                 padding-left: 40px;
                 padding-right: 118px;                
                 width: 570px;
-                height: 488px;
+                height: 488px;                
                 .contact-us-form-content-form-title {
                     font-weight: 600;
                     margin-bottom: 40px;

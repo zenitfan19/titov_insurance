@@ -1,0 +1,125 @@
+extends ../template
+
+block variables
+    - var title = 'Виды автостраховки'    
+
+block content
+    .fullscreen-container
+        .breadcrumbs
+            a.breadcrumbs-item(href="") Главная
+            img(src="assets/images/breadcrumbs-arrow.svg", alt="")
+            a.breadcrumbs-item(href="") КАСКО
+        .fullscreen-container-info
+            .fullscreen-container-info-title
+                span Страхование автомобиля
+            .fullscreen-container-info-text
+                span Специальные предложения от 15 до 45%<br>
+                span Все виды страхования            
+            
+    .main-container.about-page
+        .mini-cards
+            .mini-cards-item
+                .mini-cards-item__header
+                    span Зеленая карта
+                .mini-cards-item__subheader
+                    span Аналог ОСАГО за рубежом
+                .mini-cards-item__text
+                    span Страховая защита от угона,
+                    | повреждений или полной гибели автомобиля.
+                    | Дополнительные опции: 
+                    span.green GAP
+                    span — гарантированное сохранение
+                    | стоимости автомобиля при угоне или полной гибели.
+                    span.green РЕСО-авто-Помощь
+                    span — услуги аварийного комиссара и техпомощь на дороге
+                a.mini-cards-item__link
+                    span Подробнее
+            .mini-cards-item
+                .mini-cards-item__header
+                    span КАСКО-Профи
+                .mini-cards-item__subheader
+                    span Экономное КАСКО
+                .mini-cards-item__text
+                    span Полис покрывает ущерб Вашему автомобилю в ДТП,
+                    | если Вы не виноваты. Ваш автомобиль будет отремонтирован,
+                    | даже если у виновника ДТП не оказалось
+                    | полиса ОСАГО. Лимит до 1 млн рублей
+                a.mini-cards-item__link
+                    span Подробнее
+            .mini-cards-item
+                .mini-cards-item__header
+                    span РЕСО-авто
+                .mini-cards-item__subheader
+                    span Классическое КАСКО
+                .mini-cards-item__text
+                    span Если Вы собираетесь отправиться в путешествие
+                    | на собственном автомобиле — в Европу или в страны СНГ,
+                    | Вам необходимо оформить международный
+                    | полис страхования гражданской ответственности.
+                a.mini-cards-item__link
+                    span Подробнее
+
+        .our-advantages
+            .our-advantages-title
+                span Страхование у нас это
+            .our-advantages-content
+                .our-advantages-content-item
+                    .our-advantages-content-item-img
+                        img(src="assets/images/professionalism.svg", alt="")
+                    .our-advantages-content-item-title
+                        span Профессионализм
+                .our-advantages-content-item
+                    .our-advantages-content-item-img
+                        img(src="assets/images/fast-service.svg", alt="")
+                    .our-advantages-content-item-title
+                        span Быстрое обслуживание
+                .our-advantages-content-item
+                    .our-advantages-content-item-img
+                        img(src="assets/images/prices.svg", alt="")
+                    .our-advantages-content-item-title
+                        span Доступные цены
+        .contact-us-form
+            .contact-us-form-title
+                span Свяжитесь с нами
+            .contact-us-form-content
+                .contact-us-form-content-map
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d8000.086608950653!2d30.437943!3d59.915188!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1556182817788!5m2!1sru!2sru" width="572" height="490" frameborder="0" style="border:0" allowfullscreen></iframe>
+                .contact-us-form-content-form
+                    .contact-us-form-content-form-title
+                        span Отправьте письмо и мы скоро свяжемся с Вами
+                    form
+                        .contact-us-form-content-form-row.two-input
+                            .contact-us-form-content-form-input-group
+                                input(type="text" required)
+                                span.placeholder E-mail
+                            .contact-us-form-content-form-input-group
+                                input(type="text" required)
+                                span.placeholder Телефон
+                        .contact-us-form-content-form-row
+                            .contact-us-form-content-form-input-group.message
+                                textarea(required)
+                                span.placeholder Сообщение
+                    a.privacy-agreement(href="")
+                        span Отправляя сообщение, Вы соглашаетесь на обработку данных
+                    .btn
+                        a(href="")
+                            span Отправить
+                
+                
+                    
+
+
+            
+                    
+
+
+                    
+
+
+        
+
+            
+
+            
+
+        
