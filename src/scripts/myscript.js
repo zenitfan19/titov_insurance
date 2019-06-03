@@ -104,11 +104,11 @@ $(document).ready(function () {
       });
       $(document).on('change', '.insurance-switcher', function () {          
         if($(this).prop('checked')) {               
-          $(this).closest('.what-to-insure').find(('.what-to-insure-control label')).addClass('what-to-insure-main');
-          $(this).closest('.what-to-insure').find(('.what-to-insure-label')).removeClass('what-to-insure-main').addClass('what-to-insure-control');          
+          $(this).closest('.what-to-insure').find(('.what-to-insure-label.right')).addClass('what-to-insure-main').removeClass('what-to-insure-submain');
+          $(this).closest('.what-to-insure').find(('.what-to-insure-label.left')).removeClass('what-to-insure-main').addClass('what-to-insure-submain');          
         } else {          
-          $(this).closest('.what-to-insure').find(('.what-to-insure-control label')).removeClass('what-to-insure-main');
-          $(this).closest('.what-to-insure').find(('.what-to-insure-label')).addClass('what-to-insure-main').removeClass('what-to-insure-control');          
+          $(this).closest('.what-to-insure').find(('.what-to-insure-label.right')).removeClass('what-to-insure-main').addClass('what-to-insure-submain');
+          $(this).closest('.what-to-insure').find(('.what-to-insure-label.left')).addClass('what-to-insure-main').removeClass('what-to-insure-submain');          
         }
       });
       $(document).on('change', '#what-to-insure-switcher', function () {       
@@ -120,7 +120,7 @@ $(document).ready(function () {
           $('.insure-cats.additional').css('display', 'none');
         }
       });
-      /*$(document).on('change', '#insurance-description-event', function () {       
+      $(document).on('change', '#insurance-description-event', function () {       
         if($('#insurance-description-event').prop('checked')) {          
           $('.insurance-description-content.event').css('display', 'none');
           $('.insurance-description-content.event.additional').css('display', 'flex');
@@ -128,8 +128,8 @@ $(document).ready(function () {
           $('.insurance-description-content.event').css('display', 'flex');
           $('.insurance-description-content.event.additional').css('display', 'none');
         }
-      });*/
-      /*$(document).on('change', '#insurance-description-type', function () {       
+      });
+      $(document).on('change', '#insurance-description-type', function () {       
         if($('#insurance-description-type').prop('checked')) {          
           $('.insurance-description-content.type').css('display', 'none');
           $('.insurance-description-content.type.additional').css('display', 'flex');
@@ -137,7 +137,7 @@ $(document).ready(function () {
           $('.insurance-description-content.type').css('display', 'flex');
           $('.insurance-description-content.type.additional').css('display', 'none');
         }
-      });*/
+      });
       $(".useful-articles-content-item__link").on("mouseover", function(){
         if($(this).find('img').hasClass('animated fadeInRight')) {
           $(this).find('img').removeClass('animated fadeInRight');
@@ -162,5 +162,21 @@ $(document).ready(function () {
         setTimeout(function() {
           $('.contact-us-form-success').fadeIn('400');
         }, 400);       
-      });      
+      }); 
+      $(document).on('click', '.what-to-insure-label', function (event) {
+        var switcher = $(this).closest('.what-to-insure-content').find('input');
+        if($(this).hasClass('left')) {          
+          if(!switcher.prop('checked')) {            
+          } else {            
+            switcher.prop('checked', false);
+            $('.insurance-switcher').trigger('change');
+          }
+        } else {          
+          if(switcher.prop('checked')) {            
+          } else {            
+            switcher.prop('checked', true);
+            $('.insurance-switcher').trigger('change');
+          }
+        }         
+      });     
 });

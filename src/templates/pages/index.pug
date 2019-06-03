@@ -6,11 +6,13 @@ block variables
 block content
     .main-container
         .what-to-insure
-            .what-to-insure-main.what-to-insure-label
-                span Я хочу застраховать
-            .what-to-insure-control
-                input(type="checkbox" class="insurance-switcher" name="what-to-insure-switcher" id="what-to-insure-switcher")
-                label(for="what-to-insure-switcher") Страховки по типу семьи
+            .what-to-insure-content
+                .what-to-insure-main.what-to-insure-label.left
+                    span Я хочу застраховать
+                .what-to-insure-control
+                    input(type="checkbox" class="insurance-switcher" name="what-to-insure-switcher" id="what-to-insure-switcher")
+                .what-to-insure-submain.what-to-insure-label.right
+                    span Страховки по типу семьи
         .insure-cats
             a(href="insurance-type.html").insure-cats-item-wrapper
                 .insure-cats-item

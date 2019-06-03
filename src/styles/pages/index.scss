@@ -290,36 +290,55 @@
 
         }
     }
-    .what-to-insure {        
-        margin: 0 auto;
-        width: 620px;
+    .what-to-insure {       
         margin-top: 100px;
         margin-bottom: 70px;
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
+        .what-to-insure-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 33px;
+        }        
+        .what-to-insure-submain {
+            font-size: 14px;
+            line-height: 19px;
+            color: #818181;                     
+        }
         .what-to-insure-main {
             font-size: 24px;
-            font-weight: 800;           
+            font-weight: 800;
+            color: #111;                     
         }
         .what-to-insure-label {
             margin-right: 30px;
+            transition: 0.5s; 
+            flex: 0 1 40%; 
+            cursor: pointer;
+        }
+        .what-to-insure-label.left {
+            margin-left: auto;
+            text-align: right; 
+        }
+        .what-to-insure-label.right {
+            margin-right: auto;
+            text-align: left; 
         }
         .what-to-insure-control {
-            input[type="checkbox"] {
-                position: absolute;
-                margin: 8px 0 0 16px;    
-            }
-            input[type="checkbox"] + label {
+            flex: 0 1 80px;
+            input {
                 position: relative;
-                padding: 0px 0 0 95px;                              
-            }
-            input[type="checkbox"] + label:before {
+            }                      
+            input[type="checkbox"]:before {
                 content: "";
                 position: absolute;
                 display: block;
-                left: 0;
-                top: 0;
+                left: -50%;
+                top: -10px;
                 width: 65px; /* x*5 */
                 height: 30px; /* x*3 */
                 border-radius: 16px; /* x*2 */
@@ -328,12 +347,12 @@
                 -webkit-transition: all 0.3s;
                 transition: all 0.3s;
             }
-            input[type="checkbox"] + label:after {
+            input[type="checkbox"]:after {
                 content: "";
                 position: absolute;
                 display: block;
-                left: 4px;
-                top: 4px;
+                left: -1px;
+                top: -6px;
                 width: 24px; /* x*3 */
                 height: 24px; /* x*3 */
                 border-radius: 16px; /* x*2 */
@@ -341,15 +360,12 @@
                 -webkit-transition: all 0.3s;
                 transition: all 0.3s;
             }
-            input[type="checkbox"] + label:hover:after {                
+            input[type="checkbox"]:hover:after {                
                 box-shadow: 0 0 5px rgba(0,0,0,0.3);
             }
-            input[type="checkbox"]:checked + label:after {
+            input[type="checkbox"]:checked:after {
                 margin-left: 35px;
-            }
-            input[type="checkbox"]:checked + label:before {
-                
-            }
+            }            
         }
     }
 
@@ -537,28 +553,7 @@
                 margin-right: 0;
             }
             .what-to-insure-control {
-                font-size: 12px;
-                input[type="checkbox"] {
-                    left: -10000px;
-                }
-                input[type="checkbox"]:checked + label {
-                    &:after {
-                        right: -81px;
-                    }
-                }
-                input[type="checkbox"] + label {
-                    padding: 0;
-                    &:before {
-                        left: unset;
-                        right: -85px;
-                        top: -20px;
-                    }
-                    &:after {
-                        left: unset;
-                        right: -46px;
-                        top: -16px;
-                    }
-                }
+                font-size: 12px;                
             }
         }
         .useful-articles {
@@ -591,6 +586,24 @@
                             height: 140px;
                         }
                     }
+                }
+            }
+        }
+        .what-to-insure {
+            .what-to-insure-content {
+                flex-wrap: wrap;
+                height: auto;                
+                .what-to-insure-label {
+                    flex: 0 1 calc(100% - 70px);
+                }
+                .what-to-insure-control {
+                    margin-bottom: -20px;
+                    flex: 0 1 70px;
+                }
+                .what-to-insure-label.left {
+                    margin-left: unset;
+                    margin-right: auto;
+                    text-align: left;
                 }
             }
         }

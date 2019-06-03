@@ -153,15 +153,11 @@
     margin: 0 auto;
     margin-bottom: 100px;
     &:nth-child(2) {
-        .what-to-insure {
-            width: 720px;
-        }
+        
     }
     &:nth-child(3) {
         margin-bottom: 0;
-        .what-to-insure {
-            width: 530px;
-        }
+        
     }
     .insurance-description-title {
         font-size: 18px;
@@ -170,7 +166,8 @@
     }
     .what-to-insure {
         margin-top: 50px;
-        margin-bottom: 60px;        
+        margin-bottom: 60px;
+        width: 100%;       
     }
     .insurance-description-content.type.additional {
         display: none;
@@ -297,14 +294,10 @@
             }
         }
         &:nth-child(2) {
-            .what-to-insure {
-                width: 573px;
-            }
+            
         }
         &:nth-child(3) {
-            .what-to-insure {
-                width: 432px;
-            }
+            
         }
         .what-to-insure {
             margin-top: 40px;
@@ -360,14 +353,10 @@
         }
         .insurance-description {
             &:nth-child(2) {
-                .what-to-insure {
-                    width: 265px;
-                }
+                
             }
             &:nth-child(3) {
-                .what-to-insure {
-                    width: 220px;
-                }
+                
             }
             .what-to-insure {
                 margin-bottom: 20px;

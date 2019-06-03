@@ -43,11 +43,13 @@ block content
             .insurance-description-title
                 span Полис КАСКО
             .what-to-insure
-                .what-to-insure-main.what-to-insure-label
-                    span Виды страхового покрытия
-                .what-to-insure-control
-                    input(type="checkbox" class="insurance-switcher" name="insurance-description-type" id="insurance-description-type")
-                    label(for="insurance-description-type") Дополнительное страхование
+                .what-to-insure-content
+                    .what-to-insure-main.what-to-insure-label.left
+                        span Виды страхового покрытия
+                    .what-to-insure-control
+                        input(type="checkbox" class="insurance-switcher" name="insurance-description-type" id="insurance-description-type")
+                    .what-to-insure-submain.what-to-insure-label.right
+                        span Дополнительное страхование
             .insurance-description-content.type
                 .insurance-description-content-img
                     img(src="assets/images/car.jpg", alt="")
@@ -102,11 +104,13 @@ block content
             .insurance-description-title
                 span Быстрое и простое оформление полиса
             .what-to-insure
-                .what-to-insure-main.what-to-insure-label
-                    span При оформлении
-                .what-to-insure-control
-                    input(type="checkbox" class="insurance-switcher" name="insurance-description-event" id="insurance-description-event")
-                    label(for="insurance-description-event") При страховом случае
+                .what-to-insure-content
+                    .what-to-insure-main.what-to-insure-label.left
+                        span При оформлении
+                    .what-to-insure-control
+                        input(type="checkbox" class="insurance-switcher" name="insurance-description-event" id="insurance-description-event")
+                    .what-to-insure-submain.what-to-insure-label.right
+                        span Страховки по типу семьи
             .insurance-description-content.event
                 .insurance-description-content-img
                     img(src="assets/images/passport.jpg", alt="")
